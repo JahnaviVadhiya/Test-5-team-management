@@ -1,0 +1,214 @@
+.menus{
+    margin-top: 12rem;
+    background-color: white;
+    padding-bottom: 1rem;
+    position: relative;
+
+    @media only screen and(max-width:$bp-medium){
+        padding-bottom: 0;
+    }
+
+    @media only screen and(max-width:$bp-small){
+        grid-row:2 /3;
+        grid-column:1 / -1;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 2rem;
+    }
+
+    @media only screen and(max-width:$bp-smallest){
+        margin-top: 2rem;
+    }
+
+//////////////////////////////////////////////////////
+/// FOR MENU UL LIST
+    &-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+        height:100%;
+
+        @media only screen and(max-width:$bp-small){
+            flex-direction: row;
+            align-items: flex-end;
+            margin-top: 2rem;
+            padding: 0 1rem;
+        }
+
+        @media only screen and(max-width:$bp-smallest){
+            margin-top:1rem;
+            align-items: center;
+        }
+
+        &__item-question{
+            margin-top: auto;
+
+            @media only screen and(max-width:$bp-small){
+                 margin-left:auto;
+            }
+            @media only screen and(max-width:$bp-smallest){
+                margin-top:0;
+           }
+        }
+
+    }
+
+    &__link:link,
+    &__link:visited{
+        display: block;
+    }
+
+    &__icon-default{
+        background-color: $color-primary;
+        padding: 1.8rem;
+
+        @media only screen and(max-width:$bp-small){
+            padding:.8rem 1.8rem;
+        }
+    }
+
+    &__icon{
+        font-size: 2.4rem;
+        color: #555;
+
+        @media only screen and(min-width:$bp-bigscreen){
+            font-size: 3rem;
+        }
+
+    //    &:hover{
+    //         background-color: $color-primary;
+    //         padding:.8rem 1.8rem;
+        
+    //    }
+    }
+}
+
+.menus__icon-default{
+    color: black;
+
+    @media only screen and(max-width:$bp-smallest){
+        color: #555;
+    }
+}
+
+.icon-question{
+    font-size: 2.4rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    padding: .4rem;
+}
+
+.sub-menu{
+    background-color: $color-primary;
+    padding:2rem;
+    font-family: arial;
+    
+    @media only screen and(max-width:$bp-small){
+        grid-row:3 /4;
+        grid-column:1 / -1;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+
+        .sub-menu__item:hover {
+            .inner-list{
+                display: block;
+            } 
+        }  
+    }
+
+    @media only screen and(max-width:$bp-smallest){
+        margin-top:.4rem;
+   }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        position: relative;
+
+        width:90%;
+        margin:0 auto;
+
+        @media only screen and(max-width:$bp-small){
+           flex-direction: row;
+           align-items: center;
+           gap:3rem;
+        } 
+
+        @media only screen and(max-width:$bp-small){
+            gap:1.5rem;
+            padding-left:0;
+         }
+    }
+
+    &__item{
+        // color: #443d37;
+        color: #111;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        position: relative;
+
+        @media only screen and(min-width:$bp-bigscreen){
+            font-size: 2rem;
+        }
+
+        @media only screen and(max-width:$bp-small){
+            align-items: center;
+            gap:.4rem;
+        }
+
+        @media only screen and(max-width:$bp-smallest){
+          & span{
+            display: none;
+          }
+        }
+
+        & span{
+            @media only screen and(max-width:$bp-small){
+               padding-top:.4rem
+            }
+        }
+        
+    }
+}
+
+.inner-list{
+    list-style: none;
+    padding: .8rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+    z-index: 99;
+    @media only screen and(max-width:$bp-small){
+       display: none;
+       position: absolute;
+       top: 100%;
+       width: 300%;
+       background-color: rgba(236, 236, 236,1);
+    }
+}
+.inner-item{
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 200;
+
+    @media only screen and(min-width:$bp-bigscreen){
+        font-size: 1.8rem;
+    }
+
+
+    &__default{
+        color: #443d37;
+        font-weight: 700;
+    }
+}

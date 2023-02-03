@@ -1,0 +1,55 @@
+.logo{
+    justify-self: center;
+    padding: 1rem;
+
+    &__icon{
+        font-size: 4rem;
+        grid-column: 1 /2;
+        grid-row: 1/ 2;
+        color: #443d37;
+
+        @media only screen and(min-width:$bp-bigscreen){
+            font-size: 5rem;
+        }
+    }
+}
+
+.company-detail{
+    background-color: $color-primary;
+    padding: 1.8rem 2rem .8rem ;
+
+    @media only screen and(max-width:$bp-small){
+       grid-column: 2 /-1;
+        //    padding-bottom: 1rem;
+       padding: 1rem 2rem 1rem;
+    }
+
+    &__heading{
+        // color: #443d37;
+        color: black;
+        font-weight: 600;
+
+        @media only screen and(min-width:$bp-bigscreen){
+            font-size: 3rem;
+        }
+    }
+
+    &__text{
+        font-size: .8rem;
+        margin-top: -.4rem;
+
+        @media only screen and(min-width:$bp-bigscreen){
+            font-size: 1.2rem;
+        }
+
+        @media only screen and(max-width:$bp-small){
+            font-size: 1.2rem;
+            margin-top: -.6rem;
+         }
+    }
+}
+
+.logo,
+.company-detail{
+    border-bottom: 1px solid #ddd;
+}

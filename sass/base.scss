@@ -1,0 +1,149 @@
+// COLORS
+
+$color-primary:#ebe3d7;
+$color-orange:#d24e26;
+$color-orange-light-1:#eccb9b;
+$color-orange-light-2:#f7845e;
+
+$color-grey-dark:#443d37;
+$color-gery-light-1:#555;
+
+
+// $bp-desktop:156.62em;        //2506px
+
+$bp-bigscreen:160em;        //2560px
+
+$bp-hugeforth:140.31em;    //2245px
+$bp-hugethrd:125em;         //2000px
+$bp-hugesecn:108.12em;       //1730px
+
+$bp-huge:100em;              //1600px
+$bp-largehuge:90em;         //1440px
+
+$bp-largesec:81.56em;       //1305px
+$bp-largest:74.06em;        //1185px
+
+$bp-smallpadding:73.37em;              //1174px for reminder card
+
+$bp-large:67.81em;           //1085px
+$bp-smallmedium:64em;         //1024px
+$bp-medium:63.43em;          //1015px
+$bp-small:42.81em;          //685px
+$bp-smaller:30.31em;        //485px
+$bp-smallest:26.87em;        //430px
+$bp-phone:21.25em;         //340px
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and(min-width:$bp-bigscreen){
+        font-size: 80%;
+    }
+
+    @media only screen and(min-width:$bp-hugethrd){
+       font-size: 73%;
+    }
+
+    @media only screen and(max-width:$bp-large){
+        font-size: 56%;
+    }
+
+    @media only screen and(max-width:$bp-smaller){
+        font-size: 50%;
+    }
+
+    @media only screen and(max-width:$bp-smallest){
+        font-size: 45%;
+    }
+
+    @media only screen and(max-width:$bp-phone){
+        font-size: 40%;
+    }
+}
+
+body{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: min-content minmax(210px,min-content) 1fr 350px;
+    // grid-template-rows:min-content 1fr;
+    grid-template-rows: min-content minmax(min-content,1fr);
+    // grid-template-rows: 65px 100%;
+
+    @media only screen and(min-width:$bp-bigscreen){
+        // grid-template-columns: min-content minmax(350px,min-content) 1fr minmax(1200px,max-content);
+        grid-template-columns: min-content minmax(400px,min-content) 1fr minmax(500px,max-content)
+    }
+
+    @media only screen and(min-width:$bp-hugeforth){
+        grid-template-columns: min-content minmax(600px,min-content) 1fr max-content;
+    }
+
+    @media only screen and(min-width:$bp-hugesecn){
+        grid-template-columns: min-content minmax(350px,min-content) minmax(400px,1fr) 460px;
+    }
+
+    @media only screen and(max-width:$bp-medium){
+        grid-template-columns: min-content minmax(210px,min-content) 1fr;
+    }
+}
+
+.heading-2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 1;
+
+    @media only screen and(min-width:$bp-bigscreen){
+        font-size: 2.4rem;
+    }
+
+    @media only screen and(max-width:$bp-largest){
+        font-size: 1.5rem;
+    }
+}
+
+.heading-3{
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    &__medium{
+
+        @media only screen and(min-width:$bp-bigscreen){
+            font-size: 2.5rem;
+        }
+        @media only screen and(max-width:$bp-medium){
+            font-size: 2rem;
+        }
+
+        @media only screen and(max-width:$bp-small){
+            font-size: 1.8rem;
+        }
+    }
+
+    &__smaller{
+        
+        @media only screen and(min-width:$bp-bigscreen){
+            font-size: 1.8rem;
+        }
+
+        @media only screen and(max-width:$bp-small){
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+    }
+   
+}

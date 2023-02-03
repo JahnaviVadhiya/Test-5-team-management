@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Team Management</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <ion-icon name="filter-circle-outline" class="logo__icon"></ion-icon>
+        </div>
+
+        <div class="company-detail">
+            <h1 class="company-detail__heading">Ziferbalt</h1>
+            <p class="company-detail__text">Teamwork & time management</p>
+        </div>
+
+        <div class="projects">
+            <h2 class="projects__date">Today, 4 October</h2>
+
+            <form action="#" class="projects__search">
+                <button class="search-button">
+                    <ion-icon name="search-outline" class="icon-search"></ion-icon>
+                </button>
+                <input type="text" class="projects__search-input" placeholder="Searching for....">
+            </form>
+
+            <div class="recent">
+                <div class="recent__heading">
+                    <h3 class="heading-3 heading-3__medium">Recent projects</h3>
+                    <p class="recent__viewall">View all</p>
+                </div>
+                
+                <div class="card-container">
+                    <div class="project-card project-card__dark">
+                        <div class="team">
+                            <div class="team__images team__images-dark">
+                                <img src="img/user2.jpg" alt="Member 1" class="img-first">
+                                <img src="img/user7.jpg" alt="Member 2" class="last-img">
+                            </div>
+
+                            <ion-icon name="ellipsis-vertical" class="team__icon-more"></ion-icon>
+                        </div>
+
+                        <div class="project-name">
+                            <h2 class="heading-2">Design system</h2>
+                        <p class="project-card__deadline">Deadline: 18 October</p>
+                        </div>
+
+                        <div class="progressbar">
+                            <p class="progress-text">84 hours / 40%</p>
+                            <div class="progressbar-container">
+                                <div class="progress progress-less"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-card__light">
+                        <div class="team">
+                            <div class="team__images team__images-light">
+                                <img src="img/user2.jpg" alt="Member 1" class="img-first">
+                                <img src="img/user7.jpg" alt="Member 2">
+                            </div>
+
+                            <ion-icon name="ellipsis-vertical" class="team__icon-more"></ion-icon>
+                        </div>
+
+                        <div class="project-name">
+                            <h2 class="heading-2">Make unique page for customer</h2>
+                        <p class="project-card__deadline">Deadline: 30 October</p>
+                        </div>
+                        
+                        <div class="progressbar">
+                            <p class="progress-text">108 hours / 75%</p>
+                            <div class="progressbar-container">
+                                <div class="progress progress-more"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="reminder">
+                <h3 class="heading-3 heading-3__medium">Reminders</h3>
+                <div class="reminder-card">
+                    <div class="reminder-data">
+                        <p class="reminder-data__time">Tomorrow, 16:00-18:00</p>
+                        <p class="reminder-data__title">Discussion of intern results of the project</p>
+                    </div>
+
+                    <button class="reminder-data__btn">Set reminder</button>
+                    <div class="reminder__icon">
+                        <ion-icon name="ellipse" class="reminder__maindot"></ion-icon>
+                        <ion-icon name="ellipse" class="reminder__dotlight"></ion-icon>
+                        <ion-icon name="ellipse" class="reminder__dotlight"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="members">
+            <div class="members__icon-div">
+                <ion-icon name="ellipsis-horizontal" class="members__icon-more"></ion-icon>
+            </div>           
+            <div class="user-nav">
+                <button class="user-nav__btn">Add project</button>
+                <ion-icon name="notifications-outline" class="user-nav__notify"></ion-icon>
+                <div class="user-nav__data">
+                    <img src="img/user2.jpg" alt="Member image" class="user-nav__img">
+                    <div class="user-nav__text">
+                        <p class="user-nav__tag">User</p>
+                        <p class="user-nav__name">Maria</p>
+                    </div>
+                </div>
+
+                <button class="user-nav__icon"><ion-icon name="chevron-down-outline"></ion-icon></button>
+            </div>
+
+            <div class="teammembers">
+                <h3 class="heading-3 heading-3__medium">Team memebers</h3>
+                <div class="teammembers__photos">
+                    <img src="img/user2.jpg" alt="Team member 1">
+                    <img src="img/user3.jpg" alt="Team member 1">
+                    <div class="circle">JR</div>
+                    <img src="img/user4.jpg" alt="Team member 1">
+                    <img src="img/user5.jpg" alt="Team member 1">
+                    <button class="teammembers__plus">+</button>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card__time">
+                    <p class="team-card__title">Project time</p>
+                    <p class="heading-3 heading-3__medium heading-3__smaller">18 hours</p>
+                </div>
+
+                <div class="team-card__progress">
+                    <p class="team-card__title">Project time</p>
+                    <p class="heading-3 heading-3__medium heading-3__smaller">2</p>
+                </div>
+
+                <div class="team-card__progress">
+                    <p class="team-card__title">Finished tasks</p>
+                    <p class="heading-3 heading-3__medium heading-3__smaller">16</p>
+                </div>
+            </div>
+
+            <div class="dailytask">
+                <div class="recent__heading">
+                    <h3 class="heading-3 heading-3__medium">Daily tasks (3)</h3>
+                    <p class="recent__viewall dailytask__edit">Edit</p>
+                </div>
+
+                <div class="dailytask-cards">
+                    <div class="dailytask-card dailytask-card--1">
+                        <p class="dailytask-card__plus">+</p>
+                        <p class="dailytask-card__heading dailytask-card__heading1">Add new</p>
+                        
+                    </div>
+
+                    <div class="dailytask-card dailytask-card--2">
+                        <form action="#">
+                            <div class="icon-lable">
+                                <ion-icon name="ellipse" class="iconcircle iconcircle--pink"></ion-icon>
+                                <label for="checkbox" class="lable">New </label>
+                            </div>
+                            
+                            <input type="checkbox" name="checkbox" value="Done" class="checkbox"></checkbox>
+                        </form>
+                        <p class="dailytask-card__heading">Change color palette to more bright</p>
+                    </div>
+
+                    <div class="dailytask-card dailytask-card--3">
+                        <form action="#">
+                            <div class="icon-lable">
+                                <ion-icon name="ellipse" class="iconcircle iconcircle--cyan"></ion-icon>
+                                <label for="checkbox" class="lable">In progress</label>
+                            </div>
+                            <input type="checkbox" name="checkbox" value="Done" class="checkbox"></checkbox>
+                        </form>
+                        <p class="dailytask-card__heading">Make prototype for mobile version </p>
+                    </div>
+
+                    <div class="dailytask-card dailytask-card--4">
+                        <form action="#">
+                            <div class="icon-lable">
+                                <ion-icon name="ellipse" class="iconcircle iconcircle--white"></ion-icon>
+                                <label for="checkbox" class="lable">Done </label>
+                            </div>
+                            <input type="checkbox" name="checkbox" value="Done" class="checkbox__checked" checked></checkbox>
+                        </form>
+                        <p class="dailytask-card__heading">Make fixes in home page</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="menus">
+            <ul class="menus-list">
+                <li class="menus-list__item"><a href="#" class="menus__link"><ion-icon name="home-outline" class="menus__icon menus__icon-default" ></ion-icon></a></li>
+
+                <li class="menus-list__item"><a href="#" class="menus__link"><ion-icon name="people-outline" class="menus__icon"></ion-icon></a></li>
+
+                <li class="menus-list__item"><a href="#" class="menus__link"><ion-icon name="calendar-outline" class="menus__icon"></ion-icon></a></li>
+
+                <li class="menus-list__item"><a href="#" class="menus__link"><ion-icon name="checkbox-outline" class="menus__icon"></ion-icon></a></li>
+
+                <li class="menus-list__item"><a href="#" class="menus__link"><ion-icon name="calendar-clear-outline" class="menus__icon"></ion-icon></a></li>
+
+                <li class="menus-list__item"><a href="#" class="menus__link chat-icon"> <ion-icon name="chatbubble-outline" class="menus__icon"></ion-icon></a>
+
+                <li class="menus-list__item menus-list__item-question"><a href="#" class="menus__link"><ion-icon name="help-outline" class="icon-question"></a></li>
+            </ul>
+        </div>
+
+        <div class="sub-menu">
+            <ul class="sub-menu__list">
+                <li class="sub-menu__item">Team <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
+
+                <li class="sub-menu__item">Projects <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                    <ul class="inner-list">
+                        <li class="inner-item">All Projects (4)</li>
+                        <li class="inner-item">Design system</li>
+                        <li class="inner-item">Make unique design for customer</li>
+                        <li class="inner-item">User Flow</li>
+                        <li class="inner-item">UX research</li>
+                        <li class="inner-item inner-item__default">Add new project</li>
+                    </ul> 
+                </li>
+                <li class="sub-menu__item">Tasks <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                    <ul class="inner-list">
+                        <li class="inner-item">All tasks (3)</li>
+                        <li class="inner-item">new (1)</li>
+                        <li class="inner-item">In progress (1)</li>
+                        <li class="inner-item">Done (1)</li>
+                        <li class="inner-item inner-item__default">Add new task</li>
+                    </ul>
+                </li>
+                <li class="sub-menu__item">Reminders <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
+
+                <li class="sub-menu__item">messenger <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
